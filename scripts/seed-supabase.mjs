@@ -134,8 +134,8 @@ const properties = [
     bedrooms: 0,
     bathrooms: 0,
     youtube_url: null,
-    city: 'Pelaihari',
-    district: 'Pelaihari Kota',
+    city: 'Martapura',
+    district: 'Sekumpul',
     primary_image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80',
     images: [
       { image_url: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80', is_primary: true, sort_order: 0 },

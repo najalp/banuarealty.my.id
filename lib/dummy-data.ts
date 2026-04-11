@@ -2,7 +2,7 @@ import { Property } from '@/types/property';
 
 export const WHATSAPP_NUMBER = '6281234567890'; // Ganti dengan nomor WA agen
 export const AGENCY_NAME = 'Banua Realty';
-export const AGENCY_EMAIL = 'info@banuarealty.com';
+export const AGENCY_EMAIL = 'banuaralty@gmail.com ';
 
 export const DUMMY_PROPERTIES: Property[] = [
   {
@@ -165,8 +165,8 @@ SHM atas nama developer, bisa langsung balik nama. Cicilan KPR tanah tersedia di
     bedrooms: 0,
     bathrooms: 0,
     youtube_url: undefined,
-    city: 'Pelaihari',
-    district: 'Pelaihari Kota',
+    city: 'Martapura',
+    district: 'Sekumpul',
     created_at: '2024-03-01T00:00:00Z',
     primary_image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80',
     images: [

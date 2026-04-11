@@ -1,7 +1,7 @@
 export type PropertyType = 'Jual' | 'Sewa' | 'Kost';
 export type PropertyStatus = 'Tersedia' | 'Terjual' | 'Disewa';
 export type PricePeriod = 'Total' | 'Per Bulan' | 'Per Tahun';
-export type City = 'Banjarmasin' | 'Banjarbaru' | 'Martapura' | 'Pelaihari' | 'Barito Kuala';
+export type City = 'Banjarmasin' | 'Banjarbaru' | 'Martapura';
 
 export interface PropertyImage {
   id: string;
