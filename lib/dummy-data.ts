@@ -2,7 +2,7 @@ import { Property } from '@/types/property';
 
 export const WHATSAPP_NUMBER = '6281234567890'; // Ganti dengan nomor WA agen
 export const AGENCY_NAME = 'Banua Realty';
-export const AGENCY_EMAIL = 'banuaralty@gmail.com ';
+export const AGENCY_EMAIL = 'banuarelty@gmail.com';
 
 export const DUMMY_PROPERTIES: Property[] = [
   {

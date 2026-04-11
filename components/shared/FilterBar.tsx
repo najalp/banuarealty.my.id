@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { Search, SlidersHorizontal } from 'lucide-react';
 
 const propertyTypes = ['Semua', 'Jual', 'Sewa', 'Kost'];
-const cities = ['Semua', 'Banjarmasin', 'Banjarbaru', 'Martapura', 'Pelaihari', 'Barito Kuala'];
+const cities = ['Semua', 'Banjarmasin', 'Banjarbaru', 'Martapura'];
 
 interface FilterBarProps {
   onFilter: (type: string, city: string) => void;
