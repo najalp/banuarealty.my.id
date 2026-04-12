@@ -1,5 +1,6 @@
 import { supabase } from './supabase';
 import { Property, PropertyImage } from '@/types/property';
+import { DUMMY_PROPERTIES, getFilteredProperties, getPropertyBySlug } from './dummy-data';
 
 // Tipe raw dari Supabase (property_images sebagai nested array)
 interface RawProperty {
@@ -73,9 +74,9 @@ export async function getPropertiesFromDB(
 
   const { data, error } = await query;
 
-  if (error) {
-    console.error('Error fetching properties:', error.message);
-    return [];
+  if (error || !data || data.length === 0) {
+    if (error) console.error('Error fetching properties, using dummy data:', error.message);
+    return getFilteredProperties(type, city);
   }
 
   return (data as RawProperty[]).map(mapToProperty);
@@ -92,8 +93,8 @@ export async function getPropertyBySlugFromDB(
     .single();
 
   if (error || !data) {
-    console.error('Error fetching property by slug:', error?.message);
-    return null;
+    if (error) console.error('Error fetching property by slug, using dummy data:', error.message);
+    return getPropertyBySlug(slug) || null;
   }
 
   return mapToProperty(data as RawProperty);
@@ -105,6 +106,8 @@ export async function getAllSlugsFromDB(): Promise<{ slug: string }[]> {
     .from('properties')
     .select('slug');
 
-  if (error || !data) return [];
+  if (error || !data || data.length === 0) {
+    return DUMMY_PROPERTIES.map(p => ({ slug: p.slug }));
+  }
   return data as { slug: string }[];
 }
