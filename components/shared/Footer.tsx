@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Building2, Phone, Mail, MapPin, AtSign, Share2 } from 'lucide-react';
 
 export default function Footer() {
@@ -117,9 +118,11 @@ export default function Footer() {
         {/* Partnership / Academic Section */}
         <div className="border-t border-slate-800 mt-6 pt-6 flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex flex-col items-center md:flex-row gap-4 text-center md:text-left">
-            <img 
+            <Image 
               src="/poliban-logo.png" 
               alt="Logo POLIBAN" 
+              width={100}
+              height={40}
               className="h-10 w-auto grayscale transition-all duration-300 hover:grayscale-0"
             />
             <div className="space-y-1">
