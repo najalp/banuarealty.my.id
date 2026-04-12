@@ -114,8 +114,32 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
-        <div className="border-t border-slate-800 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        {/* Partnership / Academic Section */}
+        <div className="border-t border-slate-800 mt-6 pt-6 flex flex-col items-center justify-between gap-6 md:flex-row">
+          <div className="flex flex-col items-center md:flex-row gap-4 text-center md:text-left">
+            <img 
+              src="/poliban-logo.png" 
+              alt="Logo POLIBAN" 
+              className="h-10 w-auto grayscale transition-all duration-300 hover:grayscale-0"
+            />
+            <div className="space-y-1">
+              <p className="text-xs text-slate-400 font-medium">
+                Project Developed as part of Entrepreneurship Course at Politeknik Negeri Banjarmasin
+              </p>
+              <p className="text-xs text-slate-500">
+                Inkubasi Bisnis Politeknik Negeri Banjarmasin
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center md:items-end gap-1">
+            <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">
+              Partnership & Academic
+            </p>
+          </div>
+        </div>
+
+        {/* Bottom Copyright */}
+        <div className="border-t border-slate-800 mt-6 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-500">
             © {currentYear} Banua Realty. Semua hak dilindungi undang-undang.
           </p>
