@@ -75,34 +75,34 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" style={{ color: 'var(--color-primary)' }} />
                 <span className="text-sm text-slate-400 leading-relaxed">
-                  Jl. Ahmad Yani No. 123, Banjarbaru, Kalimantan Selatan 70714
+                  Jl. Brig Jend. Hasan Basri, Pangeran, Kec. Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 7012414
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 shrink-0" style={{ color: 'var(--color-primary)' }} />
                 <a
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/6283844094664"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-slate-400 hover:text-white transition-colors"
                 >
-                  +62 812-3456-7890
+                  +62 838-4409-4664
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 shrink-0" style={{ color: 'var(--color-primary)' }} />
                 <a
-                  href="mailto:info@banuarealty.com"
+                  href="banuarealty@gmail.com"
                   className="text-sm text-slate-400 hover:text-white transition-colors"
                 >
-                  info@banuarealty.com
+                  banuarealty@gmail.com
                 </a>
               </li>
             </ul>
 
             {/* WA CTA */}
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Banua%20Realty"
+              href="https://wa.me/6283844094664?text=Halo%20Banua%20Realty"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-5 px-5 py-2.5 text-sm font-semibold text-white rounded-lg transition-all hover:opacity-90"

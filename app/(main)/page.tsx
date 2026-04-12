@@ -38,7 +38,7 @@ export default function HomePage() {
     { icon: Home, label: 'Properti Dijual', value: allProperties.filter(p => p.type === 'Jual').length + '+' },
     { icon: Key, label: 'Properti Disewa', value: allProperties.filter(p => p.type === 'Sewa').length + '+' },
     { icon: Coffee, label: 'Kost Tersedia', value: allProperties.filter(p => p.type === 'Kost').length + '+' },
-    { icon: Building2, label: 'Kota Terlayani', value: '5' },
+    { icon: Building2, label: 'Kota Terlayani', value: '3' },
   ];
 
   return (
@@ -69,7 +69,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg text-slate-300 mb-10 max-w-xl fade-in-up animate-delay-200">
-            Katalog properti terverifikasi yang dikelola langsung oleh agen profesional — survei didampingi, legalitas terjamin.
+            Katalog properti terverifikasi dan terpercaya yang dikelola langsung oleh agen kami.
           </p>
 
           {/* Filter Bar */}
@@ -143,7 +143,7 @@ export default function HomePage() {
             Hubungi agen kami langsung. Kami memiliki database properti lebih banyak yang belum dipublikasikan.
           </p>
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Banua%20Realty,%20saya%20mencari%20properti%20tertentu%20namun%20belum%20menemukan%20yang%20sesuai."
+            href="https://wa.me/6283844094664?text=Halo%20Banua%20Realty,%20saya%20mencari%20properti%20tertentu%20namun%20belum%20menemukan%20yang%20sesuai."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-emerald-700 font-bold px-8 py-3.5 rounded-xl text-base transition-all hover:bg-emerald-50 active:scale-95"
