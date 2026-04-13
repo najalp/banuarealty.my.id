@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import PropertyCard from '@/components/shared/PropertyCard';
 import FilterBar from '@/components/shared/FilterBar';
+import FeaturedSlider from '@/components/shared/FeaturedSlider';
 import { Building2, Home, Key, Coffee } from 'lucide-react';
 import { getPropertiesFromDB } from '@/lib/supabase-data';
 import { Property } from '@/types/property';
@@ -94,6 +95,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ====== FEATURED SLIDER ====== */}
+      <FeaturedSlider />
 
       {/* ====== PROPERTY GRID ====== */}
       <section className="container mx-auto px-4 max-w-7xl py-12">
