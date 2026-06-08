@@ -12,12 +12,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div
-                className="w-9 h-9 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: 'var(--color-primary)' }}
-              >
-                <Building2 className="w-5 h-5 text-white" />
-              </div>
+              <Image 
+                src="/logo.png" 
+                alt="Banua Realty Logo" 
+                width={40} 
+                height={40} 
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-lg font-bold text-white">Banua Realty</span>
             </div>
             <p className="text-sm leading-relaxed text-slate-400 max-w-xs">
