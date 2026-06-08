@@ -1,4 +1,6 @@
 import { ImageResponse } from 'next/og';
+import fs from 'fs/promises';
+import path from 'path';
 
 export const alt = 'Promo 10 Orang Tercepat - Banua Realty';
 export const size = {
@@ -8,6 +10,10 @@ export const size = {
 export const contentType = 'image/png';
 
 export default async function Image() {
+  const logoPath = path.join(process.cwd(), 'public', 'logo.png');
+  const logoData = await fs.readFile(logoPath);
+  const logoBase64 = `data:image/png;base64,${logoData.toString('base64')}`;
+
   return new ImageResponse(
     (
       <div
@@ -31,23 +37,16 @@ export default async function Image() {
             marginBottom: '40px',
           }}
         >
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '80px',
-              height: '80px',
-              backgroundColor: '#1A9C68',
-              borderRadius: '16px',
-              marginRight: '20px',
-              color: 'white',
-              fontSize: '40px',
-              fontWeight: 'bold',
-            }}
-          >
-            BR
-          </div>
+          <img 
+            src={logoBase64} 
+            width="80" 
+            height="80" 
+            style={{ 
+              objectFit: 'contain', 
+              marginRight: '20px' 
+            }} 
+            alt="Banua Realty Logo"
+          />
           <span style={{ fontSize: '48px', fontWeight: '900', color: '#0C2340', letterSpacing: '0.1em' }}>
             BANUA REALTY
           </span>
