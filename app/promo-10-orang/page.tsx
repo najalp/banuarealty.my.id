@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Check, Phone } from 'lucide-react';
 import { Metadata } from 'next';
 
@@ -107,28 +106,6 @@ export default function Promo10OrangPage() {
           </div>
         </div>
 
-        {/* Footer / Credibility */}
-        <div className="w-full border-t-[3px] border-gray-200/80 pt-8 pb-4 flex flex-col items-center justify-center gap-5">
-          <div className="flex items-center justify-center gap-5">
-            <Image 
-              src="/poliban-logo.png" 
-              alt="Logo POLIBAN" 
-              width={70}
-              height={70}
-              className="h-16 w-auto drop-shadow-sm"
-            />
-            <div className="flex flex-col border-l-[3px] border-gray-300 pl-5 py-1">
-              <span className="font-black text-[#0C2340] text-3xl leading-none mb-1">POLIBAN</span>
-              <span className="text-[#0C2340] text-[10px] font-black tracking-[0.1em]">POLITEKNIK NEGERI BANJARMASIN</span>
-            </div>
-          </div>
-          <div className="flex items-start justify-center gap-2 max-w-[320px]">
-            <div className="w-[3px] h-10 bg-gray-300 mt-1 shrink-0 rounded-full"></div>
-            <p className="text-[13px] text-gray-600 font-semibold leading-snug">
-              Sebuah Proyek Inkubasi Bisnis Mata Kuliah Kewirausahaan Politeknik Negeri Banjarmasin.
-            </p>
-          </div>
-        </div>
 
       </div>
     </div>
