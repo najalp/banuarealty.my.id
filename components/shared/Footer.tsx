@@ -27,7 +27,7 @@ export default function Footer() {
             {/* Social */}
             <div className="flex items-center gap-3 mt-5">
               <a
-                href="https://instagram.com/banuarealty"
+                href="https://instagram.com/banua.realty"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center transition-colors hover:bg-emerald-700"
@@ -93,10 +93,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 shrink-0" style={{ color: 'var(--color-primary)' }} />
                 <a
-                  href="banuarealty@gmail.com"
+                  href="mailto:banuarealty26@gmail.com"
                   className="text-sm text-slate-400 hover:text-white transition-colors"
                 >
-                  banuarealty@gmail.com
+                  banuarealty26@gmail.com
                 </a>
               </li>
             </ul>

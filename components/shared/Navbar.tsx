@@ -91,7 +91,7 @@ export default function Navbar() {
           {/* CTA Desktop */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Banua%20Realty"
+              href="https://wa.me/6283844094664?text=Halo%20Banua%20Realty"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 text-sm font-semibold text-white rounded-lg transition-all hover:opacity-90 active:scale-95"
@@ -139,7 +139,7 @@ export default function Navbar() {
             </Link>
             <div className="pt-3 px-3">
               <a
-                href="https://wa.me/6281234567890?text=Halo%20Banua%20Realty"
+                href="https://wa.me/6283844094664?text=Halo%20Banua%20Realty"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center px-5 py-2.5 text-sm font-semibold text-white rounded-lg transition-all"
