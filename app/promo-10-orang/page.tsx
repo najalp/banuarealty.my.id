@@ -1,5 +1,6 @@
 import { Check, Phone } from 'lucide-react';
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Promo 10 Orang Tercepat - Banua Realty',
@@ -20,18 +21,13 @@ export default function Promo10OrangPage() {
         {/* Logo Section */}
         <div className="flex flex-col items-center mb-10">
           <div className="flex items-center justify-center">
-            {/* Custom SVG Logo matching BR BANUA REALTY */}
-            <svg width="80" height="60" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* B component */}
-              <path d="M15 15H45C58 15 65 22 65 35C65 48 58 55 45 55H30V75H15V15Z" fill="#1A9C68"/>
-              <path d="M30 30H40C45 30 50 32 50 35C50 38 45 40 40 40H30V30Z" fill="#F8FAFC"/>
-              {/* R component and house */}
-              <path d="M45 35H70C82 35 88 40 88 50C88 60 82 65 70 65H55V75H40L45 35Z" fill="#0C2340"/>
-              <path d="M60 20L80 5L100 20V65H60V20Z" fill="#0C2340"/>
-              {/* House Cutout */}
-              <path d="M72 25L80 18L88 25V45H72V25Z" fill="#F8FAFC"/>
-              <path d="M76 35H84V45H76V35Z" fill="#0C2340"/>
-            </svg>
+            <Image 
+              src="/logo.png" 
+              alt="Banua Realty Logo" 
+              width={80} 
+              height={80} 
+              className="w-20 h-20 object-contain"
+            />
           </div>
           <h1 className="text-[#0C2340] font-black text-xl tracking-[0.15em] mt-2">BANUA REALTY</h1>
         </div>
